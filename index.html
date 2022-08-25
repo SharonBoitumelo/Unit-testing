@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+<script src="index.js" defer ></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="greet.js"></script><script src="greet.tests.js"></script>
+    <script src="greet-widget.js"></script>
+    <script src="enough-airtime.js"></script><script src="enough-airtime.tests.js"></script>
+    <script src="enoughAirtime-widget.js"></script>
+    <script src="totalPhoneBill.js"></script><script src="totalPhoneBill.test.js"></script>
+    <script src="word-Crush.js"></script><script src="word-Crush.tests.js"></script>
+    <script src="wordCrush-widget.js"></script>
+    <script src="totalPhoneBill-widget.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+<body>
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- the function to be tested -->
+    <script src="greet.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="greet.tests.js" charset="utf-8"></script>
+
+<!--the total phone bill to be tested-->
+<script src="totalPhoneBill.js" charset="utf-8"></script><!-- the function to be tested -->
+<script src="totalPhoneBill.test.js" charset="utf-8"></script><!-- followed by the tests -->
+
+<!--the word-crush to be tested-->
+<script src="word-Crush.js" charset="utf-8"></script><!-- the function to be tested -->
+<script src="word-Crush.tests.js" charset="utf-8"></script><!-- followed by the tests -->
+
+<!--the enough airtime to be tested-->
+<script src="enough-airtime.js" charset="utf-8"></script><!-- the function to be tested -->
+<script src="enough-airtime.tests.js" charset="utf-8"></script><!-- followed by the tests -->
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+    
+</body>
+</html>
